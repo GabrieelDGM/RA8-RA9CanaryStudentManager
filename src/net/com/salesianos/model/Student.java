@@ -7,7 +7,7 @@ public class Student {
     private int añoNacimiento;
     private String centro;
 
-    public Student(String id, String nombre, String apellidos, int añoNacimiento, String centro) {
+    public Student() {
         this.id = id;
         this.nombre = nombre;
         this.apellidos = apellidos;
