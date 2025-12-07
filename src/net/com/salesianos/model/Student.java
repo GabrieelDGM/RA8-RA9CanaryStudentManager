@@ -7,6 +7,10 @@ public class Student {
     private int añoNacimiento;
     private String centro;
 
+    // Constructor vacío necesario para db4o
+    public Student() {
+    }
+
     public Student(String id, String nombre, String apellidos, int añoNacimiento, String centro) {
         this.id = id;
         this.nombre = nombre;

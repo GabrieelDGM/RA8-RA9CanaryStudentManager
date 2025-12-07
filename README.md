@@ -1,7 +1,23 @@
 # DOCUMENTACIÓN DEL PROYECTO
 # Canary Student Manager – Práctica RA8 y RA9
+
+# VER EJEMPLOS
+[Ejemplos](/src/net/com/salesianos/docs/ejemplo.md)
+
 1. Introducción
 
+## Instrucciones para compilar y ejecutar con db4o
+
+1. Asegúrate de que el archivo `db4o.jar` esté en la carpeta `lib/`.
+2. Para compilar desde la terminal (cmd), usa:
+	```cmd
+	javac -cp lib/db4o.jar -d bin src/net/com/salesianos/model/Student.java src/net/com/salesianos/persistence/DBManager.java src/net/com/salesianos/persistence/StudentDAO.java src/App.java
+	```
+3. Para ejecutar:
+	```cmd
+	java -cp bin;lib/db4o.jar App
+	```
+	(En Linux/Mac usa `:` en vez de `;`)
 La aplicación Canary Student Manager ha sido desarrollada en Java con el objetivo de gestionar un conjunto de estudiantes mediante una base de datos orientada a objetos usando db4o.
 El proyecto permite realizar operaciones básicas CRUD y está estructurado de forma modular siguiendo las indicaciones de la práctica.
 
